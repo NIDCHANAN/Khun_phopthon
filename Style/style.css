@@ -1,0 +1,453 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999; 
+}
+/* Humber */
+#humber {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out;
+  z-index: 999;
+  position: fixed; /* ตั้งค่าให้ฮัมเบอร์เกอร์เป็น Fixed */
+  top: 20px; /* ระยะห่างด้านบน */
+  right: 20px; /* ระยะห่างด้านขวา */
+}
+#humber_close {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out;
+  z-index: 999;
+  position: fixed; /* ตั้งค่าให้ฮัมเบอร์เกอร์เป็น Fixed */
+  top: 20px; /* ระยะห่างด้านบน */
+  right: 20px; /* ระยะห่างด้านขวา */
+}
+
+
+/* landing Section */
+.landing-page {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* background Section 1 */
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+/* background Section 3 */
+#background-3 {
+  background: linear-gradient(rgba(255, 255, 255, 0.674), rgba(255, 255, 255, 0.5)), url(../Image/images.jpg);
+  background-blend-mode: lighten; 
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* background Section 5 */
+#background-5 {
+  background-image: url(../Image/bg-product.jpg);
+  background-blend-mode: lighten; 
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+}
+/* background Section 6 */
+#background-6 {
+  background-image: url("https://www.siamwinery.com/user/pages/03.our-capabilities/_04-Harvesting/_01-harvest/capabilities-strip2a.jpg?g-9c8868b8");
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+}
+
+
+/* วงกลม  */
+.circle-button-black {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  color: rgb(255, 0, 0);
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out;
+}
+
+
+.circle-button {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out;
+}
+
+.circle-button:hover {
+  background-color: transparent; /* เมื่อชี้เม้าส์, ทำให้พื้นหลังเป็นโปร่งใส */
+  color: red; /* เปลี่ยนสีข้อความเป็นแดง */
+  box-shadow: 0 0 0 4px red; /* เพิ่มกรอบสีแดง */
+}
+
+.bottom6:hover{
+  background-color: transparent; /* เมื่อชี้เม้าส์, ทำให้พื้นหลังเป็นโปร่งใส */
+  color: red; /* เปลี่ยนสีข้อความเป็นแดง */
+  box-shadow: 0 0 0 4px red; /* เพิ่มกรอบสีแดง */
+}
+
+  /* กำหนดสไตล์ของ Bottom Button */
+  .bottom-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .bottom-button button {
+    background-color: transparent;
+    border: 2px solid #fff; 
+    border-radius: 50%; 
+    font-size: 24px;
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .landing-page {
+    position: relative;
+    overflow: hidden;
+    width: 100%; 
+    height: 100vh; 
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.line1, .line2 {
+    font-size: 80px;
+    font-weight: bold;
+    transition: transform 0.5s ease;
+    color: green;
+}
+
+.text-opion20 {
+  font-size: 80px;
+  font-weight: bold;
+  transition: transform 0.5s ease;
+  color: white; 
+  text-shadow:
+      2px 0 0 green,    /* เงาด้านขวา */
+      -2px 0 0 green,   /* เงาด้านซ้าย */
+      0 2px 0 green,    /* เงาด้านล่าง */
+      0 -2px 0 green;   /* เงาด้านบน */
+}
+
+
+.text-black20 {
+  font-size: 50px;
+  font-weight: bold;
+  transition: transform 0.5s ease;
+  color: rgba(255, 255, 255, 0.5); /* สีขาวโปร่งสี */
+  text-shadow:
+      2px 0 0 #ffffff,    /* เงาด้านขวา */
+      -2px 0 0 #ffffff,   /* เงาด้านซ้าย */
+      0 2px 0 #ffffff,    /* เงาด้านล่าง */
+      0 -2px 0 #ffffff;   /* เงาด้านบน */
+}
+
+.text-black20.active {
+  font-size: 50px;
+  font-weight: bold;
+  transition: transform 0.5s ease;
+  color: rgb(236, 233, 233); 
+  text-shadow:
+      0px 0 0 #040404,    /* เงาด้านขวา */
+      0px 0 0 #040404,   /* เงาด้านซ้าย */
+      0 0px 0 #040404,    /* เงาด้านล่าง */
+      0 0px 0 #040404;   /* เงาด้านบน */
+}
+h2.text-black20 {
+  cursor: pointer;
+}
+
+
+.text-black_nav {
+  font-size: 20px;
+  font-weight: bold;
+  transition: transform 0.5s ease;
+  color: rgba(2, 168, 66, 0.5); /* สีขาวโปร่งสี */
+  text-shadow:
+      2px 0 0 #ffffff,    /* เงาด้านขวา */
+      -2px 0 0 #ffffff,   /* เงาด้านซ้าย */
+      0 1px 0 #ffffff,    /* เงาด้านล่าง */
+      0 -1px 0 #ffffff;   /* เงาด้านบน */
+}
+
+.text-black_nav.active  {
+  font-size: 20px;
+  font-weight: bold;
+  transition: transform 0.5s ease;
+  color: rgba(255, 255, 255, 0.5); /* สีขาวโปร่งสี */
+  text-shadow:
+      2px 0 0 #ffffff,    /* เงาด้านขวา */
+      -2px 0 0 #ffffff,   /* เงาด้านซ้าย */
+      0 2px 0 #ffffff,    /* เงาด้านล่าง */
+      0 -2px 0 #ffffff;   /* เงาด้านบน */
+}
+
+
+
+/* CARD สไลด์ */
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+ margin-left: 250px;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel .card {
+  scroll-snap-align: start;
+  height: 450px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+#card1{
+  background-image: url("../Image/spy.jpg");
+  padding-top: 350px;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+#card2{
+  background-image: url("../Image/UpcomineEvent.jpg");
+  padding-top: 350px;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+#card3{
+  background-image: url("../Image/company.jpg");
+  padding-top: 350px;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+#card4{
+  background-image: url("../Image/Vidio.png");
+  padding-top: 350px;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+
+#card5{
+  background-image: url("../Image/Gallery.png");
+  padding-top: 350px;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.align-text{
+  margin-left: 250px;
+
+}
+
+.carousel-item {
+  display: block;
+}
+
+#navMenu {
+  display: none;
+}
+
+.slider{
+  margin: 0 40px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align-last: center;
+}
+
+.slider .image-items{
+  height: 250px;
+
+}
+
+.slider .image-items .image{
+  height: 250px;
+}
+
+.slider .image-items .image img{ 
+  width: 80px;
+  border-radius: 15px;
+}
+
+.arrowButton{
+  position: absolute !important;
+  top: 50% !important;
+  color: black !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  background-color: white !important;
+  padding: 10px !important;
+}
+
+.arrowButton.left{
+  left: 0 !important;
+}
+
+.arrowButton.right{
+  right: 0 !important;
+}
+
+.arrowButton::after{
+  font-size: 20px !important;
+}
+
+
+
+@media only screen and (max-width:868px){
+  .slider{
+      margin: 0 20px;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .carousel-item {
+    display: none;
+  }
+  .carousel-item.active {
+    display: block;
+  }
+  
+  .line1, .line2, .text-opion20 {
+      font-size: 25px;
+  }
+  .icon-3{
+    width: 50px;
+    margin-top: 0px;
+  }
+  .text-res{
+    font-size: 15px;
+  }
+
+  .circle-button {
+    width: 50px;
+    height: 50px;
+    font-size: 10px;
+  }
+  
+  .wrapper {
+   margin-left: 20px;
+  }
+  
+.align-text{
+  margin-left: 50px;
+
+}
+  .flex-item{
+    display: flex;
+  }
+
+  h2.text-black20 {
+    font-size: 15px;
+  }
+
+  h2.text-black20.active {
+    font-size: 15px;
+  }
+  .text-black20 {
+
+    font-size: 20px;
+
+  }
+  
+}

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SPY</title>
+        <!-- Option 1: Include in HTML -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+        <!-- bootstrap -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <!-- CSS Style -->
+        <link rel="stylesheet" href="./Style/style.css">
+    </head>
+    <body>
+      <header>
+        <!-- Humber -->
+        <button id="humber" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header bg-success">
+              <button id="humber_close" data-bs-dismiss="offcanvas" aria-label="Close" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+              </svg>
+              </button>
+          </div>
+          <div class="offcanvas-body bg-success">
+            
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <p class="nav-link text-black_nav" aria-current="page" href="#">ABOUT USABOUT US</p>
+              </li>
+              <li class="nav-item">
+                <p class="nav-link text-black_nav" aria-current="page" href="#">BUSINESSES</p>
+              </li>
+              <li class="nav-item dropdown">
+                <p class="nav-link text-black_nav" aria-current="page" href="#">INVESTORS</p>
+              </li>
+              <li class="nav-item dropdown">
+                <p class="nav-link text-black_nav" aria-current="page" href="#">SUSTAINABILITY </p>
+              </li>
+              <li class="nav-item dropdown">
+                <p class="nav-link text-black_nav" aria-current="page" href="#">NEWS AND MEDIA </p>
+              </li>
+              <hr>
+              <div class="d-flex">
+                <div class="circle-button-black ">
+                  <i class="bi bi-youtube"></i>
+                </div>
+                <div class="circle-button-black ms-5">
+                <i class="bi bi-chat-left-text"></i>
+              </div>
+              <div class="circle-button-black ms-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                </svg>
+              </div>
+              </div>
+              
+            </ul>
+          </div>
+        </div>
+         
+        <!-- Nav header -->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <img class="navbar-brand" src="./Image/logo-spy.png" height="80px"></img>
+            <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle fw-bold text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ABOUT US
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle fw-bold text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     INVESTORS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle fw-bold text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     SUSTAINABILITY
+                  </a>
+                  <ul class="dropdown-menu text-white">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item fw-bold ">
+                  <a class="nav-link text-white" href="#">CUSTOMER</a>
+                </li>
+                <li class="nav-item fw-bold mt-0">
+                  <a class="nav-link" href="#"><i class="bi bi-zoom-in text-white"></i></a>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </nav>
+      </header>
+        <!-- section 1 -->
+      <section class="landing-page m-0 p-0">
+        <video autoplay muted loop id="background-video">
+          <source src="./Image/video (1).mp4" type="video/mp4">
+        </video>
+        <!-- Bottom -->
+        <div class="bottom-button pb-3">
+          <button id="scroll-button">
+            <i class="bi bi-chevron-down text-white"></i>
+          </button>
+        </div>
+    </section>
+      <!-- section 2 -->
+    <section class="landing-page m-0 p-0" id="next-section">
+      <div class="text-container">
+        <div class="line1">WE ARE THE LEADER IN THE</div>
+        <div class="line2">
+          <span class="text-opion20">
+            BEVERAGE
+          </span>
+          INDUSTRY
+        </div>
+      </div>
+    </section>
+<!-- section 3 -->
+  <section class="landing-page m-0 p-0 text-center fw-bold " id="background-3" >
+    <h5 class="line1 text-center mt-2">
+      <span class="text-opion20">Our</span> Spywine
+    </h5>
+    <p class="mt-5 mb-1 text-res">SPY WINE COOLER has been the premier <span class="text-danger">Ready To Drink</span></p>
+    <p class="mb-1  text-res">brand among Thais for the past 30 years and has dominated the market with more</p>
+    <p class=" text-res">than 70%, lead in both the domestic Thai and the overall South East Asian market</p>
+
+    <div class="row mt-5 ms-5 me-5 justify-content-center">
+        <div class="col-md-3 col-12 justify-content-end">
+          <img src="./Image/icon-01.gif" width="120px" alt="GIF Icon" class="mb-3 icon-3">
+          <p class=" text-res">All of Haadthip’s glass bottles are 100 percent recyclable</p>
+        </div>
+        <div class="col-md-3 col-12 ">
+          <img src="./Image/icon-03.gif" width="150px"  alt="GIF Icon" class="mb-3  icon-3">
+          <p class=" text-res">Our can packaging is not only 100% recyclable but also produced from recycled aluminium, comprising 70% recycled content.</p>
+        </div>
+        <div class="col-md-3 col-12 ">
+          <img src="./Image/icon-04_1.gif" width="120px"  alt="GIF Icon" class="mb-3  icon-3">
+          <p class=" text-res">All plastic bottles are made from PET and are 100 percent recyclable</p>
+        </div>
+    </div>
+
+    <div class="row me-5 mb-5">
+        <div class="col-12 d-flex justify-content-end">
+          <button type="submit" class="circle-button" id="exploreButton">
+            Explore
+          </button>
+        </div>
+    </div>
+
+  </section>
+  <!-- section 4 -->
+  <section class="landing-page m-0 p-0 text-center fw-bold">
+    <p>WHAT’S HAPPEN IN</p>
+    <h5 class="line1 text-center">
+      HAADTHIP <span class="text-opion20"> TODAY.</span>
+    </h5>
+
+    <div class="wrapper mt-5">
+      <ul class="carousel">
+        <li class="card text-start" id="card1">
+          <h2 class="ms-3 text-white">Promotion</h2>
+          <span class="ms-3 text-secondary"><i class="bi bi-arrow-right fs-3"></i></span>
+        </li>
+        <li class="card text-start" id="card2">
+          <h2 class="ms-3 text-white">Upcomine Event</h2>
+          <span class="ms-3 text-secondary"><i class="bi bi-arrow-right fs-3"></i></span>
+        </li>
+        <li class="card text-start" id="card3">
+          <h2 class="ms-3 text-white">Company News</h2>
+          <span class="ms-3 text-secondary"><i class="bi bi-arrow-right fs-3"></i></span>
+        </li>
+        <li class="card text-start" id="card4">
+          <h2 class="ms-3">Video</h2>
+          <span class="ms-3 text-secondary"><i class="bi bi-arrow-right fs-3"></i></span>
+        </li>
+        <li class="card text-start"id="card5">
+          <h2 class="ms-3">Gallery</h2>
+          <span class="ms-3 text-secondary"><i class="bi bi-arrow-right fs-3"></i></span>
+        </li>
+      </ul>
+    </div>
+  </section>
+   <!-- section 5 -->
+  <section class="landing-page m-0 p-0" id="background-5">
+      <p class="align-text">SELECTION OF THE YEARS</p>
+      <h5 class="line1 align-text" >
+        PRODUCT <span class="text-opion20"> SPOTLIGHT</span>
+      </h5 >
+      <p class="align-text fs-5 mb-1">SPY proud to present a new sparkling wine in exclusive champagne bottle!!  </p>
+      <p class="align-text fs-5  mb-1">There are 2 exclusive selected flavors which are SPY Pink Sparkle and SPY Melon Sparkle. </p>
+      <p class="align-text fs-5  mb-1">With a nice aroma added with fizzy bubbles, they are packed in sumptuous packaging.</p>
+      <p class="align-text fs-5  mb-1">They are produced for welcoming celebrating festival that deliver on luxurious drinking experience among your friends or family.</p>
+      <p class="align-text fs-5  mb-1">These would be a great present for any festive occasion.
+        <span class="ms-5">
+          <button type="submit" class="circle-button" id="exploreButton">
+            Explore
+          </button>
+        </span>
+      </p>
+
+      <div class="slider mySwiper">
+        <div class="image-items swiper-wrapper">
+            <div class="image swiper-slide">
+              <p class="fs-3 fw-bold">Apple & Umeshu Sparkle</p>
+              <img src="./Image/spyy1.png" alt="">
+              <div class="row mt-3 ms-2">
+                  <div class="col-md-3 col-4">
+                    <div style="margin-left: 25px;  width: 30px; height: 30px; border: 2px solid black; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003 6.97 2.789ZM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461L10.404 2Z"/>
+                      </svg>
+                    </div>
+                    <p class="mt-1 mb-0" style="font-size: 10px;">ไม่มีน้ำตาล</p>                     
+                  </div>
+                  <div class="col-md-3 col-4">
+                    <div style="margin-left: 25px;  width: 30px; height: 30px; border: 2px solid black; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                      <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"/>
+                    </svg>
+                    </div>
+                    <p class="mt-1 mb-0" style="font-size: 10px;">สารควบคุมความเป็นกรด</p>                     
+                  </div>
+                  <div class="col-md-3 col-4">
+                    <div style="margin-left: 25px;  width: 30px; height: 30px; border: 2px solid black; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
+                        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                      </svg>
+                    </div>
+                    <p class="mt-1 mb-0" style="font-size: 10px;">แต่งกลิ่นธรรมชาติ</p>                     
+                  </div>
+              </div>
+            </div>
+            <div class="image swiper-slide">
+              <p class="fs-3 fw-bold">Melon Sparkle</p>
+              <img src="./Image/spyy2.png" alt="">
+              <div class="row mt-3 ms-2">
+                <div class="col-md-3 col-4">
+                  <div style="margin-left: 25px;  width: 30px; height: 30px; border: 2px solid black; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003 6.97 2.789ZM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461L10.404 2Z"/>
+                    </svg>
+                  </div>
+                  <p class="mt-1 mb-0" style="font-size: 10px;">ไม่มีน้ำตาล</p>                     
+                </div>
+                <div class="col-md-3 col-4">
+                  <div style="margin-left: 25px;  width: 30px; height: 30px; border: 2px solid black; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
+                      <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                    </svg>
+                  </div>
+                  <p class="mt-1 mb-0" style="font-size: 10px;">แต่งกลิ่นธรรมชาติ</p>                     
+                </div>
+                <div class="col-md-3 col-4">
+                  <div style="margin-left: 25px;  width: 30px; height: 30px; border: 2px solid black; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                    <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"/>
+                  </svg>
+                  </div>
+                  <p class="mt-1 mb-0" style="font-size: 10px;">สารควบคุมความเป็นกรด</p>                     
+                </div>
+              </div>
+            </div>
+            <div class="image swiper-slide">
+              <p class="fs-3 fw-bold">Pink Sparkle</p>
+              <img src="./Image/spyy3.png" alt="">
+              <div class="row mt-3 ms-2">
+                <div class="col-md-3 col-4">
+                  <div style="margin-left: 25px;  width: 30px; height: 30px; border: 2px solid black; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003 6.97 2.789ZM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461L10.404 2Z"/>
+                    </svg>
+                  </div>
+                  <p class="mt-1 mb-0" style="font-size: 10px;">ไม่มีน้ำตาล</p>                     
+                </div>
+                <div class="col-md-3 col-4">
+                  <div style="margin-left: 25px;  width: 30px; height: 30px; border: 2px solid black; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
+                      <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                    </svg>
+                  </div>
+                  <p class="mt-1 mb-0" style="font-size: 10px;">แต่งกลิ่นธรรมชาติ</p>                     
+                </div>
+                <div class="col-md-3 col-4">
+                  <div style="margin-left: 25px;  width: 30px; height: 30px; border: 2px solid black; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                    <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"/>
+                  </svg>
+                  </div>
+                  <p class="mt-1 mb-0" style="font-size: 10px;">สารควบคุมความเป็นกรด</p>                     
+                </div>
+              </div>
+            </div>
+            <div class="image swiper-slide">
+              <p class="fs-3 fw-bold">SPY BLUE</p>
+              <img src="./Image/spyy4.png" alt="">
+              <div class="row mt-3 ms-2">
+                <div class="col-md-3 col-4">
+                  <div style="margin-left: 25px;  width: 30px; height: 30px; border: 2px solid black; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003 6.97 2.789ZM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461L10.404 2Z"/>
+                    </svg>
+                  </div>
+                  <p class="mt-1 mb-0" style="font-size: 10px;">ไม่มีน้ำตาล</p>                     
+                </div>
+                <div class="col-md-3 col-4">
+                  <div style="margin-left: 25px;  width: 30px; height: 30px; border: 2px solid black; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
+                      <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                    </svg>
+                  </div>
+                  <p class="mt-1 mb-0" style="font-size: 10px;">แต่งกลิ่นธรรมชาติ</p>                     
+                </div>
+                <div class="col-md-3 col-4">
+                  <div style="margin-left: 25px;  width: 30px; height: 30px; border: 2px solid black; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                    <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"/>
+                  </svg>
+                  </div>
+                  <p class="mt-1 mb-0" style="font-size: 10px;">สารควบคุมความเป็นกรด</p>                     
+                </div>
+              </div>
+            </div>
+            <div class="image swiper-slide">
+              <p class="fs-3 fw-bold">SPY RED</p>
+              <img src="./Image/spyy5.png" alt="">
+              <div class="row mt-3 ms-2">
+                <div class="col-md-3 col-4">
+                  <div style="margin-left: 25px;  width: 30px; height: 30px; border: 2px solid black; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003 6.97 2.789ZM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461L10.404 2Z"/>
+                    </svg>
+                  </div>
+                  <p class="mt-1 mb-0" style="font-size: 10px;">ไม่มีน้ำตาล</p>                     
+                </div>
+                <div class="col-md-3 col-4">
+                  <div style="margin-left: 25px;  width: 30px; height: 30px; border: 2px solid black; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
+                      <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                    </svg>
+                  </div>
+                  <p class="mt-1 mb-0" style="font-size: 10px;">แต่งกลิ่นธรรมชาติ</p>                     
+                </div>
+                <div class="col-md-3 col-4">
+                  <div style="margin-left: 25px;  width: 30px; height: 30px; border: 2px solid black; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                    <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"/>
+                  </svg>
+                  </div>
+                  <p class="mt-1 mb-0" style="font-size: 10px;">สารควบคุมความเป็นกรด</p>                     
+                </div>
+              </div>
+            </div>
+            <div class="image swiper-slide">
+              <p class="fs-3 fw-bold">SPY CLASSIC</p>
+              <img src="./Image/spyy6.png" alt="">
+              <div class="row mt-3 ms-2">
+                <div class="col-md-3 col-4">
+                  <div style="margin-left: 25px;  width: 30px; height: 30px; border: 2px solid black; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003 6.97 2.789ZM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461L10.404 2Z"/>
+                    </svg>
+                  </div>
+                  <p class="mt-1 mb-0" style="font-size: 10px;">ไม่มีน้ำตาล</p>                     
+                </div>
+                <div class="col-md-3 col-4">
+                  <div style="margin-left: 25px;  width: 30px; height: 30px; border: 2px solid black; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
+                      <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                    </svg>
+                  </div>
+                  <p class="mt-1 mb-0" style="font-size: 10px;">แต่งกลิ่นธรรมชาติ</p>                     
+                </div>
+                <div class="col-md-3 col-4">
+                  <div style="margin-left: 25px;  width: 30px; height: 30px; border: 2px solid black; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                    <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"/>
+                  </svg>
+                  </div>
+                  <p class="mt-1 mb-0" style="font-size: 10px;">สารควบคุมความเป็นกรด</p>                     
+                </div>
+              </div>
+            </div>
+        </div>
+   
+    </div>
+      </div>
+      
+      </div>
+  </section>
+  <!-- section 6 -->
+  <section class="landing-page m-0 p-0 text-center" id="background-6" style="height: 800px;">
+      <p class="mt-3">OVER 50 YEARS,</p>
+    <p class="text-black20"> HAADTHIP FOR 
+      <span class="text-black">SUSTAINABILITY</span>
+    </p>
+    <p class="fw-bold">การผลิตน้ำไซเดอร์เป็นศาสตร์และศิลป์ในตัวเองเช่นเดียวกันกับผลิตไวน์  เรามีความภูมิใจในการคัดเลือกแอปเปิ้ลชั้นดีสำหรับมูสไซเดอร์  เครื่องดื่มไซเดอร์ระดับพรีเมี่ยมของเรา
+      <br> กุญแจสำคัญคือความสะอาดและการหมักบ่มที่ดีจะทำให้มูสไซเดอร์แสดงรสชาติและกลิ่นที่มีเอกลักษณ์เฉพาะตัวออกมาทันทีที่เปิดขวด  <br>  ชนิดของยีสต์และอุณหภูมิที่เหมาะสมคือตัวแปรสำคัญที่จับรสชาติสดชื่นและรสเฉพาะของแอปเปิลไว้ได้ในมูส  <br>  หลังจากหมักบ่มจนลงตัวแล้ว น้ำไซเดอร์จากทุกถังหมักจะถูกนำมาผสมอย่างระมัดระวังเพื่อบรรจุขวดต่อไป</p>
+      <button class="btn btn-danger rounded-2 mt-3">
+        Read more
+      </button>
+      
+  <div class="row">
+      <div class="col-md-6 col-12 text-white">
+            <h2 id="Environment" class="text-black20 active">Environment</h2>
+            <p id="Environment_p" style="display: none;">Read more <i class="bi bi-arrow-right"></i></p>
+            <h2 id="Social" class="text-black20 ">Social</h2>
+            <p  id="Social_p" style="display: none;">Read more <i class="bi bi-arrow-right"></i></p>
+            <h2 id="Economic" class="text-black20 ">Economic</h2>
+            <p  id="Economic_p" style="display: none;">Read more <i class="bi bi-arrow-right"></i></p>
+            <h2 id="Community"class="text-black20 " >Community Support</h2>
+            <p id="Community_p" style="display: none;">Read more <i class="bi bi-arrow-right"></i></p>
+      </div>
+      <div class="col-md-6 col-12">
+        <img src="https://www.haadthip.com/storage/home/sustainability/environment.jpg" class="rounded-circle w-50" id="EnvironmentPic" alt="..." >
+        <img src="https://www.haadthip.com/storage/home/sustainability/social.jpg" class="rounded-circle w-50" id="SocialPic" alt="..." style="display: none;">
+        <img src="https://www.haadthip.com/storage/home/sustainability/economic.jpg" class="rounded-circle w-50" id="EconomicPic" alt="..." style="display: none;">
+        <img src="https://www.haadthip.com/storage/home/sustainability/community.jpg" class="rounded-circle w-50" id="CommunityPic" alt="..." style="display: none;">
+      </div>
+  </div>
+  
+    </section>
+
+ <!-- section 7-->
+    <section class="landing-page m-0 p-0 text-center bg-success h-75" >
+        <p class="text-white mt-5 pt-5">PRICE FOR TODAY</p>
+        <h1 class="text-black"> INVESTOR
+          <span class="text-black20">CORNER</span>
+        </h1>
+
+        
+        <div class="row justify-content-center" >
+            <div class="col-md-4 col-12 text-center">
+                <button class="rounded rounded-3 border border-danger bottom6" style="width: 350px; height: 60px;">
+                 INVESTOR OVERVIEW <i class="bi bi-arrow-right"></i>
+                </button>
+            </div>
+            <div class="col-md-4 col-12">
+              <button class="rounded rounded-3 border border-danger bottom6" style="width: 350px; height: 60px;">
+                RESOURCE CENTER<i class="bi bi-arrow-right"></i>
+              </button>  
+            </div>
+        </div>
+        <div class="row mt-3 justify-content-center  mb-5 pb-5" >
+          <div class="col-md-4 col-12 text-center">
+              <button class="rounded rounded-3 border border-danger bottom6" style="width: 350px; height: 60px;">
+                PERFORMANCE HIGHLIGHT <i class="bi bi-arrow-right"></i>
+              </button>
+          </div>
+          <div class="col-md-4 col-12">
+            <button class="rounded rounded-3 border border-danger bottom6"  style="width: 350px; height: 60px;">
+              IR CONTACT <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+      </div>
+    </section>
+
+     <!-- section 8 Businesses Customer-->
+    <section class="landing-page m-0 p-0 text-center h-75" >
+      <div class="row mt-3 pt-5" >
+          <div class="col-md-4 col-12 ">
+              <img src="./Image/logo-spy.png" width="200px;">
+                <select  class="form-select w-75 ms-5 mt-3 mb-3">
+                  <option>Related Website</option>
+                  <option>SPY WINE COOLER</option>
+                  <option>SPY ZERO SUGAR</option>
+                </select>
+              
+          </div>
+          <div class="col-md-2 col-12 mt-5 text-start">
+              <h2>Businesses
+                Customer</h2>
+          </div>
+          <div class="col-md-2 col-12 mt-5 text-start">
+              <p class="mb-1">Home</p>
+              <p class="mb-1">  About Us</p>
+              <p class="mb-1"> Investors</p>
+              <p class="mb-1"> Sustainability</p>
+              <p class="mb-1"> Newsroom</p>
+              <p class="mb-1"> Career</p>
+               <p class="mb-1"> Contact</p>
+          </div>
+          <div class="col-md-4 col-12 mt-5 text-start  mb-5 pb-5">
+              <p>GET UPDATE</p>
+              <p class="fw-bold">Subscribe to our newsletter to receive <br> update and special announcements</p>
+
+              <button class="text-white bg-danger border border-2 border-danger rounded-3 h-25">
+                  Subscribe
+              </button>
+              <hr class="w-75">
+          </div>
+      </div>
+    </section>
+
+ <!-- section footer-->
+<footer class="bg-success d-flex text-center text-white justify-content-end">
+      <p class="MT-2">Terms and Conditions</p>
+      <p class="MT-2">  Privacy Policy</p>
+      <p class="MT-2"> Cookie Policy</p>
+      <p class="MT-2 me-5"> Sitemap</p>
+</footer>
+<!-- เรียกใช้งาน script -->
+    <script src="./script.js"></script>
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerGroup: 1,
+          loop: true,
+          fade: true,
+          grabCursor: true,
+          loopFillGroupWithBlank: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            500: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            868: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          },
+        });
+      </script>
+    </body>
+</html>
